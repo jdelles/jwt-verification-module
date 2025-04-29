@@ -7,7 +7,7 @@
         "start": "node dist/app.js",
         "build": "tsc",
         "dev": "ts-node src/app.ts",
-        "prepare": "husky"
+        "prepare": "husky install"
     },
     "keywords": [],
     "author": "",
