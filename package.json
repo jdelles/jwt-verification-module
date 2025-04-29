@@ -8,7 +8,7 @@
         "dev": "ts-node src/app.ts",
         "lint": "eslint . --ext .ts,.tsx,.js --max-warnings=0 --config eslint.config.mjs",
         "lint:fix": "eslint . --ext .ts,.tsx,.js --fix --config eslint.config.mjs",
-        "prepare": "husky install",
+        "prepare": "husky",
         "start": "node dist/app.js"
     },
     "keywords": [],
