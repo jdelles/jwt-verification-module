@@ -4,10 +4,12 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "node dist/app.js",
         "build": "tsc",
         "dev": "ts-node src/app.ts",
-        "prepare": "husky install"
+        "lint": "eslint . --ext .ts,.tsx,.js --max-warnings=0 --config eslint.config.mjs",
+        "lint:fix": "eslint . --ext .ts,.tsx,.js --fix --config eslint.config.mjs",
+        "prepare": "husky install",
+        "start": "node dist/app.js"
     },
     "keywords": [],
     "author": "",
