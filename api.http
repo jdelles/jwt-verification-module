@@ -1,0 +1,12 @@
+# @name login
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "James"
+}
+
+###
+# @name protected
+GET http://localhost:3000/api/auth/protected
+Authorization: Bearer {{login.token}}
