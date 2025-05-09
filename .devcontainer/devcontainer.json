@@ -1,0 +1,24 @@
+{
+    "name": "Node.js & TypeScript",
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "context": ".."
+    },
+    "workspaceFolder": "/workspace",
+    "remoteUser": "node",
+    "forwardPorts": [3000, 9229],
+    "postCreateCommand": "npm install",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "terminal.integrated.shell.linux": "/bin/sh"
+            },
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "eamodio.gitlens",
+                "ms-vscode.vscode-node-azure-pack"
+            ]
+        }
+    }
+}
